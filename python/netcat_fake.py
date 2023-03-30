@@ -17,14 +17,17 @@
 #   netcat_fake.py -t localhost -p 9999 # your client
 #
 # With the above example, you will have a remote shell where you can
-#   execute commands according to the server's privilege.
+#   execute commands according to the server's privilege. For the
+#   client to access the shell, it needs to press `<CTRL-D>`.
 #
 # ------------------------------------------------------------------
 #
 # History:
 #
-#       Version 0.1 2023-03-29, José V S Carneiro git@josevaltersilvacarneiro.net
+#       Version 0.1 2023-03-29, José V S Carneiro, git@josevaltersilvacarneiro.net
 #           - First Version
+#       Version 0.2 2023-03-30, José V S Carneiro, git@josevaltersilvacarneiro.net
+#           - Adding comments that exemplify how this script works
 #
 # Copyright: GPLv3
 
