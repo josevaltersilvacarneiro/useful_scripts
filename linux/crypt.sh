@@ -22,6 +22,9 @@
 #               - First Version
 #	Version 0.2 2023-03-25, José V S Carneiro git@josevaltersilvacarneiro.net:
 #		- Now only one operation is allowed at a time
+#	Version 0.3 2023-07-01, José V S Carneiro <git@josevaltersilvacarneiro.net>:
+#		- The password|passphrase used to encrypt the files|file is hidden
+#
 #
 # Copyright: GPLv3
 
@@ -50,7 +53,7 @@ function get_password()
 {
         while true
         do
-                PASSWORD=$(zenity --entry --title "Entry of the password" --text "Enter a password")
+                PASSWORD=$(zenity --password --title "Crypt")
                 [[ -n "$PASSWORD" ]] && break
         done
 
